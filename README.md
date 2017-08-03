@@ -1,7 +1,7 @@
 # Electronics
 Quick Tables to hasten a few common electronic design task.
 
-#E12 Voltage Divider
+# E12 Voltage Divider
 A very common task is to design a voltage divider.
 The equation is K=R1/(R1+R2). R1 is the low side resistor, R2 is the high side resistor. K is the ratio of the divider.
 The usual algorithm is to set a resistor to E12 value, use the equation to calculate the other, and approximate to E12, calculate the actual ratio and iterate until the divider has two E12 value with a small enough error.
@@ -10,7 +10,7 @@ It's time consuming to do this every time, so I reversed the algorithm.
 I made a spreadsheet with all combinations of E12 values and their ratio.
 Then I sorted by the ratio and printed the result. Now, if you want to design the two resistor you first calculate the ratio, then search the table for the two E12 resistor with a close enough value. Much faster and often you get better approximation.
 
-#E12 Voltage Divider Example
+# E12 Voltage Divider Example
 A short example on how to use this system.
 You have an LM317 Linear voltage regulator with an adjust voltage of 1.25V. You want 5.00V in output.
 Vout = 5.00V. Vadj = 1.25V
@@ -32,7 +32,7 @@ R1 = 27K, R2 = 82K, K = 0.2477 (higher voltage)
 R1 = 120K, R2 = 330K, K = 0.2667 (lower voltage)
 And so on. This algorithm make it that much quicker to find resistors and decide if E12 series has a close enough ratio or if you need 1% resistors to do the job.
 
-#Voltage Divider Remarks
+# Voltage Divider Remarks
 This table helps you only in choosing E12 resistor with the right ratio. There are additional considerations.
 One is about the sum of resistences.
 R1 = 1K, R2 = 1K, K = 0.500
