@@ -1,5 +1,5 @@
 # Electronics
-Quick Tables to hasten a few common electronic design task.
+Quick Tables to hasten a few common design tasks.
 
 # E12 Voltage Divider
 A very common task is to design a voltage divider.
