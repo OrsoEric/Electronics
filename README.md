@@ -11,7 +11,7 @@ The usual algorithm is to set a resistor to E12 value, use the equation to calcu
 
 It's time consuming to do this every time, so I reversed the algorithm.
 I made a spreadsheet with all combinations of E12 values and their ratio.
-Then I sorted by the ratio and printed the result. Now, if you want to design the two resistor you first calculate the ratio, then search the table for the two E12 resistor with a close enough value. Much faster and often you get better approximation.
+Then I sorted by the ratio and printed the result. Now, if you want to design the two resistors you first calculate the ratio, then search the table for the two E12 resistor with a close enough value. Much faster and often you get better approximation.
 
 # E12 Voltage Divider Example
 A short example on how to use this system.
@@ -45,13 +45,13 @@ And so on. This algorithm make it that much quicker to find resistors and decide
 
 # Voltage Divider Remarks
 This table helps you only in choosing E12 resistor with the right ratio. There are additional considerations.
-One is about the sum of resistences.
+One is about the sum of resistors.
 
 R1 = 1K, R2 = 1K, K = 0.500
 
 R1 = 100K, R2 = 100K, K = 0.500
 
-Both of those partitions have the same ratio, but the sum of the resistences is 2K in the first case and 200K in the second. The first will drain a lot more bias current, the second will be more sensitive to current flow in the divider output.
+Both of those voltage dividers have the same ratio, but the total resistance is 2K in the first case and 200K in the second. The first will drain a lot more bias current, the second will be more sensitive to current flow in the divider output.
 The right values depend on your design. Always take into account the current. In the example Iadj of the LM317.
 Another consideration is about filter capacitor. The filter frequency depends on the sum of the resistor and the value of the capacitor itself. 
 
