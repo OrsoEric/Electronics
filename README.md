@@ -1,6 +1,9 @@
 # Electronics
 Quick Tables to hasten a few common design tasks.
 
+# E12 Values
+1.0 1.2 1.5 1.8 2.2 2.7 3.3 3.9 4.7 5.6 6.8 8.2 10 ...
+
 # E12 Voltage Divider
 A very common task is to design a voltage divider.
 The equation is K=R1/(R1+R2). R1 is the low side resistor, R2 is the high side resistor. K is the ratio of the divider.
