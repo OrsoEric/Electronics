@@ -35,6 +35,7 @@ Vout = Vadj/K = 1.25V/0.2481 = 5.038V
 Alternative K were:
 
 R1 = 27K, R2 = 82K, K = 0.2477 (higher voltage)
+
 R1 = 120K, R2 = 330K, K = 0.2667 (lower voltage)
 
 And so on. This algorithm make it that much quicker to find resistors and decide if E12 series has a close enough ratio or if you need 1% resistors to do the job.
@@ -44,6 +45,7 @@ This table helps you only in choosing E12 resistor with the right ratio. There a
 One is about the sum of resistences.
 
 R1 = 1K, R2 = 1K, K = 0.500
+
 R1 = 100K, R2 = 100K, K = 0.500
 
 Both of those partitions have the same ratio, but the sum of the resistences is 2K in the first case and 200K in the second. The first will drain a lot more bias current, the second will be more sensitive to current flow in the divider joing.
