@@ -48,7 +48,7 @@ R1 = 1K, R2 = 1K, K = 0.500
 
 R1 = 100K, R2 = 100K, K = 0.500
 
-Both of those partitions have the same ratio, but the sum of the resistences is 2K in the first case and 200K in the second. The first will drain a lot more bias current, the second will be more sensitive to current flow in the divider joing.
+Both of those partitions have the same ratio, but the sum of the resistences is 2K in the first case and 200K in the second. The first will drain a lot more bias current, the second will be more sensitive to current flow in the divider output.
 The right values depend on your design. Always take into account the current. In the example Iadj of the LM317.
 Another consideration is about filter capacitor. The filter frequency depends on the sum of the resistor and the value of the capacitor itself. 
 
